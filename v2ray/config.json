@@ -1,0 +1,33 @@
+{
+  "inbounds": [
+    {
+      "port": 12141,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "53ebfc80-448c-4e58-8c6c-2ac01249e244",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "mkcp",
+        "kcpSettings": {
+          "uplinkCapacity": 5,
+          "downlinkCapacity": 100,
+          "congestion": true,
+          "header": {
+            "type": "utp"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
